@@ -1,0 +1,566 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-color: blanchedalmond;
+	font-size: 16px;
+	font-family: cursive;
+	line-height: 1.5;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* Navigation bar */
+
+#header {
+	background-color: black;
+	padding: 20px; 
+	margin: 0;
+	display: flex;
+	position: fixed; 
+	top: 0;
+	height: 10%;
+	width: 100%;
+	z-index: 7;
+}
+
+nav label {
+	position: relative;
+	top: 5px;
+	right: 30px;
+}
+
+nav label a {
+	color: white;
+	float: left;
+	padding-left: 40px;
+}
+
+
+nav label :hover {
+	color: goldenrod;
+}
+
+nav ul {
+	display: flex;
+	position: fixed;
+	left: 75%;
+	list-style: none;
+}
+
+nav li a {
+	color: white;
+	padding: 12px;
+}
+
+nav li :hover {
+	color: goldenrod;
+}
+
+
+
+#side-box, #menu-bar, #container {
+	visibility: hidden;
+}
+
+
+/* Footer */
+#footer {
+	background-color: black;
+	padding: 10px; 
+	margin: 0;
+	position: fixed; 
+	bottom:0;
+	height: 9%;
+	width: 100%;
+}
+
+footer p {
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+
+/* Home page */
+main h1 {
+	color:white;
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding-top: 205px;
+	padding-left: 180px;
+}
+
+main p {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-left: 180px;
+	letter-spacing: 1px;
+	opacity: 0.8;
+}
+
+#main {
+	background-color: cadetblue;
+	background: linear-gradient(rgba(40, 30, 26, 0.9),  rgba(40, 26, 26, 0)),  url(images/IMG_2308.JPG);	
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	padding: 20px; 
+	margin:0;
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 90%;
+}
+
+#main .main-btn {
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	background-color:orangered;
+	border: 0px solid white;
+	padding: 16px;
+	width: 340px;
+	margin-top: 20px; 
+	margin-left: 180px;
+	opacity: 0.8;
+}
+
+#main .main-btn:hover {
+	background-color: green;
+}
+
+
+/* About page */
+
+#about-me {
+	background-color: wheat;
+	padding: 80px; 
+	width: 100%;
+	display: inline-flex;
+}
+
+.img {
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	top: 140px;
+	left: 168px;
+	position: absolute;
+}
+
+.img-two {
+	border-radius: 50%;
+	width: 420px;
+	height: 420px;
+	top: 530px;
+	left: 790px;
+	margin-bottom: 100px;
+	position: absolute;
+}
+
+#about-me p {
+	color: black;
+	font-size: 0.9375 rem;
+	word-spacing: 0.5em;
+	font-weight: 500px;
+	padding: 20px 15px 40px 20px;
+	text-transform: normal;
+	margin: 0 80px 40px 580px;
+	position: absolute;
+	top: 175px;
+	text-align: left;
+}
+
+#hobbies p {
+	color: black;
+	font-size: 0.9375 rem;
+	word-spacing: 0.5em;
+	font-weight: 500px;
+	padding: 30px 40px 50px 40px;
+	text-transform: normal;
+	margin: 510px 600px 60px 100px;
+	position: absolute;
+	top: 98px;
+	text-align: left;
+}
+
+#about-me h1 {
+	color: black;
+	font-size: 1.875rem;
+	font-weight: 500px;
+	text-align: center;
+	text-decoration: underline;
+	position: absolute;
+	left: 600px;
+	bottom: 500px;
+}
+
+
+/* Portfolio page */
+span h5 {
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 500px;
+	text-align: left;
+	text-decoration: underline;
+	position: absolute;
+	left: 224px;
+	bottom: 344px;
+}
+
+.square {
+	background-color: wheat;
+	padding: 20px;
+	position: absolute;
+	height: 25%;
+	width: 100%;
+}
+
+.tea {
+	color: black;
+	font-size: 1.7rem;
+	font-weight: 500px;
+	text-align: center;
+	text-decoration: underline;
+	position: absolute;
+	left: 630px;
+	bottom: 500px;
+}
+
+.tea-p {
+	color: black;
+	font-size: 1.15rem;
+	text-align: left;
+	text-decoration: none;
+	position: absolute;
+	left: 220px;
+	top: 300px;
+}
+	
+.square img {
+	display: flex;
+	position: relative;
+	top: 168px;
+	left: 740px;
+	height: 360px;
+	width: 400px;
+	padding: 20px;
+	margin-bottom: 80px;
+	border: 0.5px solid sienna;
+	background-color: tan;
+}
+
+.square a :hover {
+	background-color: lightslategray;
+	opacity: 0.8;
+}
+
+
+/* Contact page */
+
+#contact {
+	background-color: wheat;
+	padding: 20px;
+	position: absolute;
+	height: 25%;
+	width: 100%;
+}
+
+.contact-heading {
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 500px;
+	text-align: left;
+	text-decoration: underline;
+	position: absolute;
+	left: 630px;
+	top: 90px;
+}
+
+#box {
+	background-color: khaki;
+	border: 2px solid black;
+	display: flex;
+	position: absolute;
+	top: 200px;
+	left: 250px;
+	width: 900px;
+	height: 300px;
+	margin-bottom: 70px;
+	box-shadow: 5px 6px 10px 10px #000;
+	opacity: 0.8;
+}
+
+.box-p {
+	color: black;
+	font-size: 0.9375 rem;
+	word-spacing: 0.5em;
+	font-weight: 500px;
+	padding: 20px 15px 40px 20px;
+	text-transform: normal;
+	margin: 0 100px 80px 150px;
+	position: absolute;
+	top: 50px;
+	text-align: left;
+	text-align: center;
+}
+
+#emoji {
+	position: absolute;
+	bottom: 120px;
+	left: 382px;
+	padding: 0 10px;
+	font-size: 20px;
+}
+
+#emoji h5 {
+	position: relative;
+	right: 98px;
+	bottom: 90px;
+	font-size: 1.2rem;
+	text-decoration: underline;
+}
+
+#social {
+	position: absolute;
+	top: 200px;
+	left: 303px;
+	padding: 0 10px;
+	font-size: 55px;
+}
+
+#social a {
+	color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+	#header {
+		background-color: orangered;
+		padding: 20px; 
+		margin: 0;
+		display: flex;
+		position: fixed; 
+		top: 0;
+		height: 10%;
+		width: 100%;
+		z-index: 7;
+	}
+
+	#footer {
+		background-color:orangered;
+		padding: 10px; 
+		margin: 0;
+		position: fixed; 
+		bottom:0;
+		height: 9%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#header {
+		background-color:teal;
+		padding: 20px; 
+		margin: 0;
+		display: flex;
+		position: fixed; 
+		top: 0;
+		height: 10%;
+		width: 100%;
+		z-index: 7;
+	}
+
+	#footer {
+		background-color: teal;
+		padding: 10px; 
+		margin: 0;
+		position: fixed; 
+		bottom:0;
+		height: 9%;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 312px) {
+	#header {
+		background-color:sienna;
+		padding: 20px; 
+		margin: 0;
+		display: flex;
+		position: fixed; 
+		top: 0;
+		height: 10%;
+		width: 100%;
+		z-index: 7;
+	}
+
+	#footer {
+		background-color:sienna;
+		padding: 10px; 
+		margin: 0;
+		position: fixed; 
+		bottom:0;
+		height: 9%;
+		width: 100%;
+	}
+}
+
+
+
+/*
+
+@media screen and  (max-width: 700px) {
+
+	#side-box, #menu-bar, #container {
+		visibility: visible;
+	}
+
+	.side-box {
+		background-color: black;
+		opacity: 0.9;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		overflow-x: hidden;
+		padding-top: 50px;
+		text-decoration: none;
+		transition: 0.7s;
+	}
+
+	.side-box .close {
+		position: absolute;
+		top: 0;
+		left: 22px;
+		margin-right: 50px;
+		font-size: 30px;
+	}
+
+	.side-box a {
+		display: block;
+		color: white;
+		text-align: right;
+		padding: 30px 30px;
+		text-decoration: none;
+		font-size: 25px;
+		position: relative;
+		top: 50px;
+	}
+
+	#menu-bar {
+		font-size: 30px;
+		position: fixed;
+		margin-top: 15px;
+		top: 0;
+		left: 320px;
+	}
+
+	#menu-bar a {
+		color: white;
+		text-decoration: none;
+	}
+
+	#header {
+		background-color:black;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 7;
+	}
+
+	nav label {
+		position: relative;
+		right: 30px;
+		font-weight: bold;
+		font-size: 19px;
+		visibility: visible;
+	}
+
+	nav ul {
+		visibility: hidden;
+	}
+
+	
+	main h1 {
+		color:white;
+		font-size: 2.1rem;
+		font-weight: bold;
+		padding: 0 20px;
+		position: relative;
+		top: 380px;
+		right: 5px;
+		text-align: center;
+	}
+	
+	main p {
+		color: white;
+		font-size: 1.14rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		opacity: 0.8;
+		text-align: center;
+		position: relative;
+		top: 390px;
+		right: 80px;
+		left: 4px;
+		padding: 0 20px;
+	}
+	
+	#main .main-btn {
+		border-radius: 2px;
+		color: white;
+		display: inline-block;
+		position: relative;
+		top: 400px;
+		right: 150px;
+		font-weight: bold;
+		background-color:orangered;
+		border: 0px solid white;
+		padding: 20px;
+		width: 280px;
+		opacity: 0.8;
+	}
+
+	#footer {
+		display: flex;
+		background-color:black;
+		position: fixed; 
+		bottom: 0;
+		height: 9%;
+		width: 100%;
+	}
+
+	footer p {
+		display: flex;
+		text-align: center;
+		font-size: 1rem;
+		position: relative;
+		top: 0;
+		left: 100px;
+	}
+
+	.img, .img-two, #about-me p, #hobbies p, #about-me h1, #about-me {
+		visibility: hidden;
+	}
+
+} 
+
+*/
